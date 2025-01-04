@@ -5,8 +5,6 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: true, // Expose the server to your local network
-    port: 3000, // Specify the port for the development server
     proxy: {
       '/api': {
         target: 'https://ramsha-da-project-backend.vercel.app/', // Backend server
