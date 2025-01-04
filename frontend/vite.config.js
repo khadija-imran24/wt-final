@@ -9,7 +9,7 @@ export default defineConfig({
     port: 3000, // Specify the port for the development server
     proxy: {
       '/api': {
-        target: 'http://localhost:4400', // Backend server
+        target: 'https://ramsha-da-project-backend.vercel.app/', // Backend server
         changeOrigin: true, // Required if the backend uses a different domain
         secure: false, // Set to true if using HTTPS locally
       },
